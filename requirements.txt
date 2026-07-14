@@ -1,0 +1,4 @@
+upython-telegram-bot
+httpx
+python-dotenv
+flask
