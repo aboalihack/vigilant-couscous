@@ -1,4 +1,4 @@
-upython-telegram-bot
+python-telegram-bot
 httpx
 python-dotenv
 flask
