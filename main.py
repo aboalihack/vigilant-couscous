@@ -72,7 +72,9 @@ ENV_FILE = ".env"
 
 if not os.path.exists(ENV_FILE):
     print("\n⚠️ ملف الإعدادات غير موجود. سيتم إنشاؤه الآن.")
-    bot_token_input = input("أدخل توكن البوت (BOT_TOKEN): ").strip()
+    import os
+bot_token_input = os.environ.get("BOT_TOKEN")
+
     openrouter_input = input("أدخل مفتاح OpenRouter (OPENROUTER_KEY): ").strip()
     admin_input = input("أدخل معرف المشرف (ADMIN_IDS) [مثال: 5634813261]: ").strip()
     
